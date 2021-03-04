@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+   
+<script >
+   var arr1=["3", "a", "a", "a", "2", "3", "a", "3", "a", "2", "4", "9", "3"]
+   for (i = 0; i < arr1.length; i++)
+	{
+		for(j = i + 1; j < arr1.length;)
+		{
+    		if(arr1[i] === arr1[j])
+    		{
+    			for(k = j; k < arr1.length; k++)
+    			{
+    				arr1[k] = arr1[k + 1];
+				}
+				arr1.length--;
+			}
+			else
+			{
+				j++;
+			}
+		}
+	}
+    for (i = 0; i < arr1.length; i++)
+  	{
+ 		console.log(arr1[i]);
+  	}	
+
+   
+   
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+    
+    </head>
+    <body>
+       
+    <script >
+     var  entity= ["cake", "apple pie", "cookie", "chips", "patties"]
+     var entity2=prompt("Welcome to ABC bakery.what do you want to order sir/ma'am");
+     for(i=0;i<entity.length;i++)
+     {
+         var ifrun=true;
+         if(entity2 === entity[i])
+         {
+             document.write(entity2,"is available at our Bakery at index",i,"in our Bakery");
+             var ifrun=false;
+             break;
+            var ifrun=false;
+         }
+         
+         
+             
+             
+         
+        
+     }
+     if(ifrun === true){
+     document.write("We are sorry", entity2, "is not availbale at our bakery");
+     }
+        </script>
+    </body>
+    </html> 

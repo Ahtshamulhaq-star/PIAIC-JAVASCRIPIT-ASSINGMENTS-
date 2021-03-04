@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+   
+<script >
+
+var colour=["Blue","Green","White","Red","Orange"]
+var newcolour=prompt("Enter colour at beginning");
+console.log(colour);
+colour.splice(0,0,newcolour);
+console.log(colour);
+    var endcolour=prompt("what colour you want to end of array");
+    colour.splice(6,0,endcolour);
+    console.log(colour);
+    
+console.log("Enter two colour at beginnig");
+var newcolour1=prompt("Enter first colour at beginning");
+console.log(colour);
+var newcolour2=prompt("Enter second colour at beginning");
+console.log(colour);
+colour.splice(0,0,newcolour1);
+console.log(colour);
+colour.splice(0,0,newcolour2);
+console.log(colour);
+console.log("Delete the first colour");
+colour.shift();
+console.log(colour);
+console.log("Delete the last colour");
+colour.pop();
+console.log(colour);
+var pos=prompt("which posiction you want to add an array");
+var colname=prompt("Enter the colour name");
+colour.splice(pos,0,colname);
+console.log(colour);
+
+var newpos=prompt("which posiction you want to delete an array");
+var colourdel=prompt("How many colours you want to delete");
+var removed=colour.splice(newpos,colourdel);
+console.log(colour);
+console.log(removed);
+    </script>
+</body>
+</html>
